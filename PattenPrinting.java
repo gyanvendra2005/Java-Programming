@@ -162,3 +162,95 @@ public class PattenPrinting{
 //         ZeroOnetri(5);
 //     }
 // }
+
+
+//  ************************butter-fly*********************
+
+// public class PattenPrinting{
+   
+//     public static void ButterFly(int rows){
+//         //upper half
+//         for(int i=1; i<=rows; i++){
+//             for(int j=1; j<=i;j++){
+//                 System.out.print("*");
+//             }
+//             for(int k=1; k<=(2*rows-2*i);k++){
+//                 System.out.print(" ");
+//             }
+//             for(int l=1; l<=i;l++){
+//                 System.out.print("*");
+//             }
+//             System.out.print("\n");
+//         }
+//         //lower half
+//         for(int i=0; i<rows;i++){
+//              for(int j=rows; j>i;j--){
+//                 System.out.print("*");
+//              }
+//              for(int k=1; k<=2*i; k++){
+//                 System.out.print(" ");
+//              }
+//              for(int l=1;l<=rows-i;l++){
+//                 System.out.print("*");
+//              }
+//              System.out.print("\n");
+//         }
+//     }
+
+//     public static void main(String arg[]){
+//         ButterFly(4);
+//     }
+// }
+
+
+// ********************* SOLID RHOMBUS **********************
+
+//  public class PattenPrinting{
+   
+//     public static void SolidRhombus(int rows){
+
+//         for(int i=1; i<=rows; i++){
+//             for(int j=1; j<=rows-i;j++){
+//                 System.out.print(" ");
+//             }
+//             for(int k=1; k<=rows; k++){
+//                 System.out.print("*");
+//             }
+//             System.out.print("\n");
+//         }
+//     }
+
+//     public static void main(String arg[]){
+//         SolidRhombus(5);
+//     }
+// }
+
+
+
+// ************************* SOLID HOLLOW RHOMBUS****************
+
+
+ public class PattenPrinting{
+   
+    public static void SolidRhombus(int rows){
+
+        for(int i=1; i<=rows; i++){
+            for(int j=1; j<=rows-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=1; j<=rows; j++){
+                if(i==1 || i==rows || j==1 || j==rows){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.print("\n");
+        }
+    }
+
+    public static void main(String arg[]){
+        SolidRhombus(5);
+    }
+}
