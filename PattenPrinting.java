@@ -74,3 +74,23 @@ public class PattenPrinting{
 
 
 //******************************* INVERTED AND ROTATED HALF-PYRAMID **************************
+
+public class PattenPrinting{
+    public static void pyramid(int rows){
+        // OuterLoop
+        for(int i =1;i<=rows;i++){
+            // spaces
+            for(int j=1; j<=rows-i; j++){
+                System.out.print(" ");
+            }
+            // stars
+            for(int k=1; k<=i;k++){
+                System.out.print("*");
+                }
+                System.out.print("\n");
+        }
+    }
+    public static void main(String arg[]){
+            pyramid(4);
+    }
+}
