@@ -67,19 +67,57 @@
 
 // *********************** SUB-ARRAYS********************
 
- public class ArrayQuestions {
-    public static void pairsInArray(int arr[]) {
-        for(int i=0; i<arr.length-1; i++){
-            System.out.print("The pairs are: ");
-            for(int j=i+1;j<arr.length;j++){
-                System.out.print(  "("+arr[i]+","+arr[j]+")");
-            }
-            System.out.print("\n");
-        }
-    }
+//  public class ArrayQuestions {
+//     public static void pairsInArray(int arr[]) {
+//         for(int i=0; i<arr.length; i++){
+//             System.out.print("The sub-arrays are: ");
+//             for(int j=i;j<arr.length;j++){
+//                 for(int k=i;k<=j;k++){
+//                     System.out.print( arr[k]+",");
+//                 }
+//                  System.out.print("\n");
+//             }
+//             System.out.print("\n");
+//         }
+//     }
 
-    public static void main(String arg[]){
-                int arr[] = {2,4,6,8,10};
-                pairsInArray(arr);
-    }
- }
+//     public static void main(String arg[]){
+//                 int arr[] = {2,4,6,8,10};
+//                 pairsInArray(arr);
+//     }
+//  }
+
+
+
+//  ******************************* MAX-SUBARRAY SUM******************************
+
+//  public class ArrayQuestions {
+//     public static void pairsInArray(int arr[]) {
+//         int max = 0;
+//         int sum = 0;
+//        for(int i=0; i<arr.length; i++){
+//             // System.out.print("The max-sub-arrays are: ");
+//             for(int j=i;j<arr.length;j++){
+//                 sum=0;
+//                 for(int k=i;k<=j;k++){
+//                     sum = sum + arr[k];
+//                 }
+//                 System.out.print("\n");
+//                  System.out.print(sum);
+//                  if(max<sum){
+//                     max = sum;
+//                  }
+//             }
+            
+//             System.out.print("\n");
+          
+//         }
+//           System.out.print(max);
+        
+//     }
+
+//     public static void main(String arg[]){
+//                 int arr[] = {2,4,6,8,10};
+//                 pairsInArray(arr);
+//     }
+//  }
