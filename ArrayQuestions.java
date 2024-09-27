@@ -125,76 +125,76 @@
 
 //  ************************ TRAPPING RAINWATER ***********************
 
-// import java.util.*;
-// public class ArrayQuestions{
-//     public static int WaterHeight(int arr[]){
-//         // max in left side
-//         int n = arr.length;
-//         int leftmax[] = new int[n];
-//         leftmax[0]=arr[0];
-//         for(int i=1; i<n;i++){
-//             leftmax[i] = Math.max(leftmax[i-1] , arr[i]);
-//         }
-//         // max in right side
-//         int rightmax[] = new int[n];
-//         rightmax[n-1] = arr[n-1];
-//         for(int i=n-2;i>=0;i--){
-//             rightmax[i] = Math.max(rightmax[i+1],arr[i]);
-//         }
-//         // min of rightmax and leftmax
-//         int waterlevel;
-//         int trappedwater =0;
-//         for(int i=0;i<n;i++){
-//             waterlevel = Math.min(leftmax[i],rightmax[i]);
-//             trappedwater += waterlevel - arr[i]; 
-//         }
-//         // water trapped
-//         // int trappedwater =0;
-//         // for(int i=0)
-//         return trappedwater;
-//     }
-//     public static void main(String args[]){
-//           int arr[] = {4,2,0,6,3,2,5};
-//           int ans = WaterHeight(arr);
-//           System.out.print(ans);
-//     }
-// }
+import java.util.*;
+public class ArrayQuestions{
+    public static int WaterHeight(int arr[]){
+        // max in left side
+        int n = arr.length;
+        int leftmax[] = new int[n];
+        leftmax[0]=arr[0];
+        for(int i=1; i<n;i++){
+            leftmax[i] = Math.max(leftmax[i-1] , arr[i]);
+        }
+        // max in right side
+        int rightmax[] = new int[n];
+        rightmax[n-1] = arr[n-1];
+        for(int i=n-2;i>=0;i--){
+            rightmax[i] = Math.max(rightmax[i+1],arr[i]);
+        }
+        // min of rightmax and leftmax
+        int waterlevel;
+        int trappedwater =0;
+        for(int i=0;i<n;i++){
+            waterlevel = Math.min(leftmax[i],rightmax[i]);
+            trappedwater += waterlevel - arr[i]; 
+        }
+        // water trapped
+        // int trappedwater =0;
+        // for(int i=0)
+        return trappedwater;
+    }
+    public static void main(String args[]){
+          int arr[] = {7,4,3,8,2,5};
+          int ans = WaterHeight(arr);
+          System.out.print(ans);
+    }
+}
 
 
 
 // ********************************* BEST TIME TO BUY STOCK ***************************
  
 // import java.util.*;
-public class ArrayQuestions{
-    public static void BuyStock(int arr[]){
-        int BuyPrice = arr[0];
-        int DailyProfit = 0;
-        int maxProfit = 0;
-        for(int i=1;i<arr.length;i++){
-            if(BuyPrice<=arr[i]){
-                DailyProfit = arr[i] - BuyPrice;
-                System.out.print("The profit on"+ i +"th day is:" + DailyProfit);
-                if(maxProfit<DailyProfit){
-                maxProfit = DailyProfit;
-            }
-            }
-            // if(maxProfit<DailyProfit){
-            //     maxProfit = DailyProfit;
-            // }
-            else{
-                BuyPrice=arr[i];
-                 System.out.print(0);
-            }
-            System.out.println();
-        } 
-        System.out.print("The maximum profit is:" + maxProfit);
-        // if(profit==0){
-        //     loss =0;
-        // }
-        // return loss;
-    }
-    public static void main(String arg[]){
-         int arr[] = {7,1,5,3,6,4};
-         BuyStock(arr);
-    }
-}
+// public class ArrayQuestions{
+//     public static void BuyStock(int arr[]){
+//         int BuyPrice = arr[0];
+//         int DailyProfit = 0;
+//         int maxProfit = 0;
+//         for(int i=1;i<arr.length;i++){
+//             if(BuyPrice<=arr[i]){
+//                 DailyProfit = arr[i] - BuyPrice;
+//                 System.out.print("The profit on"+ i +"th day is:" + DailyProfit);
+//                 if(maxProfit<DailyProfit){
+//                 maxProfit = DailyProfit;
+//             }
+//             }
+//             // if(maxProfit<DailyProfit){
+//             //     maxProfit = DailyProfit;
+//             // }
+//             else{
+//                 BuyPrice=arr[i];
+//                  System.out.print(0);
+//             }
+//             System.out.println();
+//         } 
+//         System.out.print("The maximum profit is:" + maxProfit);
+//         // if(profit==0){
+//         //     loss =0;
+//         // }
+//         // return loss;
+//     }
+//     public static void main(String arg[]){
+//          int arr[] = {7,1,5,3,6,4};
+//          BuyStock(arr);
+//     }
+// }
