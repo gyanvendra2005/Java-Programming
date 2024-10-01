@@ -9,6 +9,8 @@ public class StringBasic {
         // Take Input of string
         String str3;
         str3 = sc.nextLine();
-        System.out.print(str3);
+        System.out.println(str3);
+        // length property in string
+        System.out.println(str3.length());
     }
 }
