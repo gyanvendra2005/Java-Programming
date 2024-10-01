@@ -7,10 +7,18 @@ public class StringBasic {
         String str = "Hello World";
         String str2 = new String("Java Programming");
         // Take Input of string
-        String str3;
-        str3 = sc.nextLine();
-        System.out.println(str3);
-        // length property in string
-        System.out.println(str3.length());
+        // String str3;
+        // str3 = sc.nextLine();
+        // System.out.println(str3);
+        // // length property in string
+        // System.out.println(str3.length());
+
+        // CONCATENATION
+
+        String fullName;
+        String FirstName = "Gyanvendra";
+        String LastName = "Singh";
+        fullName = FirstName+" "+LastName;
+        System.out.println(fullName);
     }
 }
