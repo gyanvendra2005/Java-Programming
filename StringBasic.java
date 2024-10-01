@@ -20,5 +20,9 @@ public class StringBasic {
         String LastName = "Singh";
         fullName = FirstName+" "+LastName;
         System.out.println(fullName);
+
+        //PRINT A CHARACTER AT PARTICULAR PLACE
+
+        System.out.println(fullName.charAt(0));
     }
 }
