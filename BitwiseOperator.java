@@ -36,4 +36,17 @@
 //     }
 // }
 
-// 
+// TO CHANGE THE VALUE OF ith TERM
+
+public class BitwiseOperator{
+    public static void ChangeValue(int num,int i){
+        int bitmark = 1<<i;
+        num = num | bitmark;
+        System.out.print(num);
+    }
+    public static void main(String arg[]){
+        int num = 10; // 00001001
+        int i =2;
+        ChangeValue(num,i);
+    }
+}
