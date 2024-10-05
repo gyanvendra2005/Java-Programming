@@ -1,0 +1,17 @@
+
+// time complexcity is O(26)
+// StringBuilder
+import java.util.*;
+public class Stringbuilder{
+     public static void main(String args[]){
+        StringBuilder sb = new StringBuilder("");
+        for(char ch ='a';ch<='z';ch++){
+            sb.append(ch);
+        }
+        System.out.println(sb.toString());
+     }
+}
+
+
+
+
