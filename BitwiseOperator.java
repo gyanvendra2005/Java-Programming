@@ -38,15 +38,51 @@
 
 // TO CHANGE THE VALUE OF ith TERM
 
+// public class BitwiseOperator{
+//     public static void ChangeValue(int num,int i){
+//         int bitmark = 1<<i;
+//         num = num | bitmark;
+//         System.out.print(num);
+//     }
+//     public static void main(String arg[]){
+//         int num = 10; // 00001001
+//         int i =2;
+//         ChangeValue(num,i);
+//     }
+// }
+
+// TO CLEAR THE ith BIT FROM A NUMBER
+
+// public class BitwiseOperator{
+//     public static void Clear(int num,int i){
+//         int bitmark =~(1<<i);
+//         num = num & bitmark;
+//         System.out.print(num);
+//     }
+//      public static void main(String arg[]){
+//         int num = 10; // 0001111
+//         int i =1;
+//         Clear(num,i);
+//      }
+// }
+
+
+// TO CHECK A NUMBER IS A POWER OF 2 OR NOT 
+
+
 public class BitwiseOperator{
-    public static void ChangeValue(int num,int i){
-        int bitmark = 1<<i;
-        num = num | bitmark;
-        System.out.print(num);
+
+    public static void Power(int num){
+        if((num&(num-1))==0){
+            System.out.print("Entered  number is a power of 2");
+        }
+        else{
+            System.out.print("Entered number is not power of 2");
+        }
     }
+
     public static void main(String arg[]){
-        int num = 10; // 00001001
-        int i =2;
-        ChangeValue(num,i);
+        int num = 16;
+        Power(num);
     }
 }
