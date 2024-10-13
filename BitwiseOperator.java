@@ -70,19 +70,42 @@
 // TO CHECK A NUMBER IS A POWER OF 2 OR NOT 
 
 
-public class BitwiseOperator{
+// public class BitwiseOperator{ 
+   //public static void Power(int num){
+//         if((num&(num-1))==0){
+//             System.out.print("Entered  number is a power of 2");
+//         }
+//         else{
+//             System.out.print("Entered number is not power of 2");
+//         }
+//     }
 
-    public static void Power(int num){
-        if((num&(num-1))==0){
-            System.out.print("Entered  number is a power of 2");
-        }
-        else{
-            System.out.print("Entered number is not power of 2");
-        }
-    }
+//     public static void main(String arg[]){
+//         int num = 16;
+//         Power(num);
+//     }
+// }
 
-    public static void main(String arg[]){
-        int num = 16;
-        Power(num);
+
+
+//  TO FIND NO OF 1 BIT IN A NUMBER
+
+    public class BitwiseOperator{
+
+        public static void countSetBit(int num){
+            int count=0;
+            while(num>0){
+                if((num & 1) !=0){
+                    count++;
+                }
+                num = num>>1;
+            }
+            System.out.print(count);
+        }
+
+        public static void main(String arg[]){
+            int num = 15;
+            countSetBit(num);
+        }
+
     }
-}
