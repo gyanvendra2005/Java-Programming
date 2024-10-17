@@ -90,22 +90,45 @@
 
 //  TO FIND NO OF 1 BIT IN A NUMBER
 
-    public class BitwiseOperator{
+    // public class BitwiseOperator{
 
-        public static void countSetBit(int num){
-            int count=0;
-            while(num>0){
-                if((num & 1) !=0){
-                    count++;
-                }
-                num = num>>1;
-            }
-            System.out.print(count);
-        }
+    //     public static void countSetBit(int num){
+    //         int count=0;
+    //         while(num>0){
+    //             if((num & 1) !=0){
+    //                 count++;
+    //             }
+    //             num = num>>1;
+    //         }
+    //         System.out.print(count);
+    //     }
 
-        public static void main(String arg[]){
-            int num = 15;
-            countSetBit(num);
-        }
+    //     public static void main(String arg[]){
+    //         int num = 15;
+    //         countSetBit(num);
+    //     }
 
-    }
+    // }
+
+
+ // FAST EXPONENTIAL QUESTIONS   
+
+//    public class BitwiseOperator{
+//       public static void fastExpo(int num, int pow){
+//         int ans =1;
+//         while(num>0){
+//             if((pow & 1 )!=0){
+//                ans = num*ans;
+//             }
+//             num = num*num;
+//             pow = pow>>1;
+            
+//         }
+//         System.out.print(ans);
+//    }
+//       public static void main(String arg[]){
+//         int num = 3;
+//         int pow = 5;
+//         fastExpo(num,pow);
+//       } 
+//    }
